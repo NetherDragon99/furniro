@@ -164,12 +164,37 @@ section:nth-child(2)>div:first-child>p{
   background-color: #e7ac23;
   border: none;
   width: 50%;
-  height: 50px;
-  font-size: 32px;
+  height: 70px;
+  font-size: 40px;
   line-height: 26px;
   font-weight: 600;
   color: #ffffff;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: 1s;
 }
+.categoryDescription button i{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #ffffff;
+  opacity: 1;
+  width: 0;
+  position: relative;
+  right: -80px;
+  transition: 1s;
+}
+.categoryDescription button:hover{
+  transform: scale(1.08);
+  transition: 1s;
+}
+.categoryDescription button:hover i{
+  opacity: 1;
+  width: 30px;
+  right: 0px;
+  transition: 1s;
+}
+
 .otherCategorys{
   grid-column: 2/3;
   grid-row: 2/3;
@@ -181,34 +206,7 @@ section:nth-child(2)>div:first-child>p{
   height: 100px;
 }
 
-/*section:nth-child(2)>div:nth-child(2){
-  display: flex;
-  justify-content: space-between;
-  width: 1400px;
-}
-section:nth-child(2)>div:nth-child(2)>div{
-  height: 700px;
-  width: 450px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-section:nth-child(2)>div:nth-child(2)>div>img{
-  width: 100%;  
-}
-section:nth-child(2)>div:nth-child(2)>div div{
-  height: 100%;
-  width: 100%;
-  padding: 40px 40px 0px 40px;
-}
-section:nth-child(2)>div:nth-child(2)>div h4{
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 36px;
-} */
+
 
 
 /*Section 2*/
