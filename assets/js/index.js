@@ -1,3 +1,4 @@
+import { products } from "./products.js";
 let x = [];
 let items =[];
 products.forEach((y)=> {

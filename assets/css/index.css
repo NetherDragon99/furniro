@@ -395,30 +395,62 @@ section:nth-child(3)>div>div:nth-child(3):hover {
 }
 section:nth-child(3)>div>div:nth-child(3)>div:first-child{
   background-color: #ffffff;
+  background-image: linear-gradient(to right ,#ffffff ,#B88E2F);
+  background-size: 500%;
+  background-position: -900px;
   color: #B88E2F;
-  border: #B88E2F solid;
+  border: #B88E2F;
   width: 70%;
   height: 40px;
-  line-height: 25px;
+  line-height:30px;
   padding: 5px;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  transition: 1s;
+}
+section:nth-child(3)>div>div:nth-child(3)>div:first-child:hover{
+  background-position: -600px;
+  border: none;
+  color: white;
 }
 section:nth-child(3)>div>div:nth-child(3)>div:nth-child(2){
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 90%;
 }
+
 section:nth-child(3)>div>div:nth-child(3)>div:nth-child(2)>div>i{
   color: #ffffff;
-  font-size: 12px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+section:nth-child(3)>div>div:nth-child(3)>div:nth-child(2)>div:hover i{
+  animation: productIcon 1s infinite;
+}
+@keyframes productIcon {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-25deg);
+
+  }
+  75%{
+    transform: rotate(25deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 section:nth-child(3)>div>div:nth-child(3)>div:nth-child(2)>div>span{
   color: #ffffff;
   margin-left: 3px;
 }
+
 section:nth-child(3)>div>div>h4{
   font-weight: 700;
   font-size: 24px;

@@ -55,24 +55,25 @@ header>nav>div:last-child{
   align-items: center;
 }
 .uiIcon{
-  transition: 1s;
+  transition: transform 1s ease;
 }
 .uiIcon:hover{
-  animation: uiIconA 2s infinite;
+  animation: uiIconA 2s 1s infinite;
   transform: translate(0px , -10px);
-  transition: transform 1s;
 }
 @keyframes uiIconA {
   0%{
+    transform: translate(0px, -10px) rotate(0deg);
   }
   25%{
-    transform: rotate(-25deg)
-    translate(0px , -10px);
+    transform: rotate(-25deg) translate(0px , -10px);
 
   }
   75%{
-    transform: rotate(25deg)
-              translate(0px , -10px);
+    transform: rotate(25deg) translate(0px , -10px);
+  }
+  100%{
+    transform: translate(0px, -10px) rotate(0deg);
   }
 }
 
@@ -122,9 +123,13 @@ header>nav>div:last-child>input , header>nav>div:last-child>label:nth-child(6){
   display: flex;
   justify-content: space-between;
 }
+header>nav>div:nth-child(2)>a{
+  transition: 300ms;
+}
 header>nav>div:nth-child(2)>a:hover{
   border-bottom: 5px solid black;
-  transition: 300ms ease-out;
+  transition: 300ms;
+  font-weight: 900;
 }
 header>div:nth-child(2){
   width: 100%;
