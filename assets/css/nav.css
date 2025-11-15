@@ -59,7 +59,8 @@ header>nav>div:last-child{
 }
 .uiIcon:hover{
   animation: uiIconA 2s infinite;
-  transform: translate(0px , -10px)
+  transform: translate(0px , -10px);
+  transition: transform 1s;
 }
 @keyframes uiIconA {
   0%{
