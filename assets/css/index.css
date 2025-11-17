@@ -17,7 +17,7 @@ div{
   background-repeat: no-repeat;
 }
 img{
-  max-width: 100%;
+  width: 100%;
   object-fit: contain;
 }
 body{
@@ -93,8 +93,9 @@ section:nth-child(2){
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 550px;
+  height: 500px;
   margin-top: 50px;
+  position: relative;
 }
 section:nth-child(2)>div:first-child{
   width: 760px;
@@ -118,9 +119,9 @@ section:nth-child(2)>div:first-child>p{
 .categorys{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 3fr 2fr;
   width: 100%;
-  height: 100%;
+  height: 500px;
 }
 .categoryImage{
   grid-column: 1/2;
@@ -191,12 +192,22 @@ section:nth-child(2)>div:first-child>p{
   right: 0px;
   transition: 1s;
 }
-
+.section1cards{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.section1cards>div>img{
+  height: 100%;
+}
 .otherCategorys{
   grid-column: 2/3;
   grid-row: 2/3;
   display: flex;
   position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .otherCategorys .buttons{
   width: 100%;
