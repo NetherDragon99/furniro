@@ -126,6 +126,8 @@ section:nth-child(2)>div:first-child>p{
 .categoryImage{
   grid-column: 1/2;
   grid-row: 1/3;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .categoryImage img{
   width: 100%;
@@ -196,9 +198,54 @@ section:nth-child(2)>div:first-child>p{
   display: flex;
   width: 100%;
   height: 100%;
+  gap: 15px;
+  position: relative;
+  overflow-x: hidden;
+}
+.section1cards>div{
+  border-radius: 50px;
+  top: 5%;
+  overflow: hidden;
+  height: 90%;
+  min-width: 200px;
+  position: relative;
+  position: absolute;
+  transform: translateX(-100%);
+  box-shadow: #000000 0px 05px 50px;
+  background-color: #000000;
+  transition: 1s;
+}
+.section1cards [class="0"]{
+  transform: translateX(140%) scale(1);
+  z-index: 10;
+}
+.section1cards [class="1"]{
+  transform: translateX(40%) scale(0.8);
+  z-index: 9;
+}
+.section1cards [class="2"]{
+  transform: translateX(-40%) scale(0.6);
+  z-index: 8;
+}
+.section1cards [class="3"]{
+  transform: translateX(-100%) scale(0.4);
+  z-index: 7;
+}
+.section1cards [class="6"]{
+  transform: translateX(240%) scale(0.8);
+  z-index: 9;
+}
+.section1cards [class="5"]{
+  transform: translateX(320%) scale(0.6);
+  z-index: 8;
+}
+.section1cards [class="4"]{
+  transform: translateX(380%) scale(0.4);
+  z-index: 7;
 }
 .section1cards>div>img{
-  height: 100%;
+  height: 125%;
+  opacity: 0.7;
 }
 .otherCategorys{
   grid-column: 2/3;
@@ -216,6 +263,8 @@ section:nth-child(2)>div:first-child>p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 50;
+
 }
 .buttonL , .buttonR{
   background-color: #0000005d;
