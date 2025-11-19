@@ -152,15 +152,19 @@ const textswipeS1 = () => {
 	let textNumber = selectedSection1Item;
 
 	if (section1dirction === 'right') {
-		document.querySelector(`.s1description [class="${textNumber}"]`).style.cssText="transform: translateX(-100%); transition: 1s;"
-	setTimeout(()=>{
-		document.querySelector(`.s1description [class="${checker(textNumber +1)}"]`).style.cssText="transform: translateX(0); transition: 1s;"
-	},1000)
+		document.querySelectorAll(`.s1description div`).forEach((v)=>{
+			v.style.cssText="transform: translateX(-100%); transition: 1s;";
+		})
+		setTimeout(()=>{
+			document.querySelector(`.s1description [class="${checker(textNumber +1)}"]`).style.cssText="transform: translateX(0); transition: 1s;"
+		},500)
 	} else {
-		document.querySelector(`.s1description [class="${textNumber}"]`).style.cssText="transform: translateX(-100%); transition: 1s;"
-	setTimeout(()=>{
-		document.querySelector(`.s1description [class="${checker(textNumber -1)}"]`).style.cssText="transform: translateX(0); transition: 1s;"
-	},1000)
+		document.querySelectorAll(`.s1description div`).forEach((v)=>{
+			v.style.cssText="transform: translateX(-100%); transition: 1s;";
+		})
+		setTimeout(()=>{
+			document.querySelector(`.s1description [class="${checker(textNumber -1)}"]`).style.cssText="transform: translateX(0); transition: 1s;"
+		},500)
 	}
 
 }
