@@ -7,6 +7,7 @@
   font-family: "Poppins", sans-serif;
   line-height: 24px;
   color: black;
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;
@@ -26,6 +27,7 @@ body{
 }
 body>section{
   margin-bottom: 200px;
+  width: 100dvh;
 }
 
 
@@ -119,7 +121,7 @@ section:nth-child(2)>div:first-child>p{
 .categorys{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 60% 40%;
+  grid-template-rows: 50% 50%;
   width: 100%;
   height: 70dvh;
 }
@@ -157,11 +159,10 @@ section:nth-child(2)>div:first-child>p{
   align-items: start;
   padding: 30px;
   justify-content: space-between;
-  height: 2fr;
 }
 
 .s1description{
-  height: 60%;
+  height: 80%;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -178,49 +179,54 @@ section:nth-child(2)>div:first-child>p{
   transform: translateX(0);
 }
 .s1description div h4{
-  font-size: 64px;
+  font-size: 3.5rem;
   line-height: 64px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 1%;
 }
 .s1description div p{
   text-align: start;
-  font-size: 18px;
+  font-size: 1,5rem;
+  line-height: 1;
   width: 70%;
 }
 
 .categoryDescription button{
   background-color: #e7ac23;
   border: none;
-  width: 50%;
-  height: 70px;
-  font-size: 40px;
-  line-height: 26px;
+  padding: 0 8%;
+  font-size: 1.5rem;
+  line-height: 1;
   font-weight: 600;
   color: #ffffff;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 1rem;
   transition: 1s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transform: translateY(50%) scaleY(130%);
 }
 .categoryDescription button i{
-  font-size: 40px;
+  font-size: 2rem;
   line-height: 40px;
   font-weight: 800;
   color: #ffffff;
   opacity: 1;
   width: 0;
   position: relative;
-  right: -80px;
+  right: -50%;
   transition: 1s;
 }
 .categoryDescription button:hover{
-  transform: scale(1.08);
+  transform: translateY(50%) scaleY(150%) scaleX(105%);
   transition: 1s;
 }
 .categoryDescription button:hover i{
   opacity: 1;
   width: 30px;
-  right: 0px;
+  right: 0;
+  transform: translateX(50%);
   transition: 1s;
 }
 .section1cards{
@@ -240,36 +246,43 @@ section:nth-child(2)>div:first-child>p{
   position: relative;
   position: absolute;
   transform: translateX(-100%);
-  box-shadow: #000000 0px 05px 50px;
+  box-shadow: #000000 0px -5px 50px;
   background-color: #000000;
   transition: 1s;
 }
 .section1cards [class="0"]{
-  transform: translateX(140%) scale(1);
+  transform: translateX(50%) scale(0.8);
+  right: 50%;
   z-index: 10;
 }
 .section1cards [class="1"]{
-  transform: translateX(40%) scale(0.8);
+  transform: translateX(50%) scale(0.7);
+  right: 75%;
   z-index: 9;
 }
 .section1cards [class="2"]{
-  transform: translateX(-40%) scale(0.6);
+  transform: translateX(50%) scale(0.6);
+  right: 95%;
   z-index: 8;
 }
 .section1cards [class="3"]{
-  transform: translateX(-100%) scale(0.4);
+  transform: translateX(50%) scale(0.4);
+  right: 110%;
   z-index: 7;
 }
 .section1cards [class="6"]{
-  transform: translateX(240%) scale(0.8);
+  transform: translateX(50%) scale(0.7);
+  right: 25%;
   z-index: 9;
 }
 .section1cards [class="5"]{
-  transform: translateX(320%) scale(0.6);
+  transform: translateX(50%) scale(0.6);
+  right: 5%;
   z-index: 8;
 }
 .section1cards [class="4"]{
-  transform: translateX(380%) scale(0.4);
+  transform: translateX(50%) scale(0.4);
+  right: -10%;
   z-index: 7;
 }
 .section1cards>div>img{
@@ -302,6 +315,7 @@ section:nth-child(2)>div:first-child>p{
   height: 100px;
   margin: 30px;
   overflow: hidden;
+  cursor: pointer;
 }
 .buttonL i{
   font-size: 64px;
