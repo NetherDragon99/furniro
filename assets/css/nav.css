@@ -35,10 +35,12 @@ header>nav{
   z-index: 100;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  overflow: visible;
 }
 header>nav>div:nth-child(1){
   width: 185px;
   height: 40px;
+  overflow: visible;
 }
 header>nav>div:nth-child(2){
   display: flex;
@@ -53,9 +55,11 @@ header>nav>div:last-child{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: visible;
 }
-.uiIcon{
+.uiIcon ,.uiIcon i{
   transition: transform 1s ease;
+  overflow: visible;
 }
 .uiIcon:hover{
   animation: uiIconA 2s 1s infinite;
