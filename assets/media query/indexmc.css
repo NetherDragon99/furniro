@@ -1,21 +1,4 @@
 @media (max-width:1440px) {
-  header>div:nth-child(3)>div>h1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  header>div:nth-child(3)>div>p {
-    font-size: 15px;
-    font-weight: 500;
-  }
-
-  header>div:nth-child(3)>div>p:first-child {
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: 600;
-  }
-
-
   /*Section 2*/
   section:nth-child(3) {
     display: grid;
@@ -145,29 +128,6 @@
 
 
 @media (max-width:1000px) {
-  header>div:nth-child(3)>div>h1 {
-    font-size: 35px;
-    line-height: 45px;
-    height: fit-content;
-  }
-
-  header>div:nth-child(3)>div>p {
-    font-size: 15px;
-    font-weight: 500;
-  }
-
-  header>div:nth-child(3)>div>div {
-    width: 150px;
-    padding: 15px 40px;
-    height: 50px;
-    font-size: 15px;
-  }
-
-  header>div:nth-child(3)>div>p:first-child {
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: 600;
-  }
 
   header>div:nth-child(3) {
     justify-content: center;

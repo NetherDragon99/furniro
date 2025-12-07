@@ -11,15 +11,18 @@
   <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/media query/indexmc.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <script src="https://kit.fontawesome.com/1ad91a2806.js" crossorigin="anonymous"></script>
-  <script type="module" src="assets/js/products.js" defer></script>
-  <script type="module" src="assets/js/index.js" defer></script>
+  <script defer type="module" src="assets/js/products.js"></script>
+  <script defer type="module" src="assets/js/index.js"></script>
+  <script defer src="assets/js/nav.js"></script>
+  <link rel="stylesheet" href="assets/icons/style.css">
 </head>
 
 <body>
   <header>
     <nav>
-      <div><img src="assets/images/logo.png" alt="logo"></div>
+      <div>
+        <img src="assets/images/logo.png" alt="logo">
+      </div>
       <div>
         <a href="index.html">Home</a>
         <a href="assets/pages/more.html">Shop</a>
@@ -28,41 +31,82 @@
       </div>
       <div>
         <span class="uiIcon">
-          <i class="fa-regular fa-user"></i>
+          <i class="icon-search"></i>
         </span>
         <span class="uiIcon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="icon-heart"></i>
         </span>
         <span class="uiIcon">
-          <i class="fa-regular fa-heart"></i>
+          <i class="icon-cart"></i>
         </span>
         <span class="uiIcon">
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="icon-menu" id="menu"></i>
         </span>
-        <input type="checkbox" id="menu">
-        <label for="menu"><i class="fa-solid fa-ellipsis-vertical"></i></label>
-        <label for="menu" id="cout"></label>
-        <div class="sidebar">
-          <div><label for="menu"><i class="fa-solid fa-x"></i></label></div>
-          <div>
-            <a href="index.html">Home</a>
-            <a href="assets/pages/more.html">Shop</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
+        <div id="side-menu" class="active">
+          <div id="close-icon">
+            <span class="icon-cross"></span>
           </div>
-          <div>
-            <span class="uiIcon">
-              <i class="fa-regular fa-user"></i>
-            </span>
-            <span class="uiIcon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <span class="uiIcon">
-              <i class="fa-regular fa-heart"></i>
-            </span>
-            <span class="uiIcon">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </span>
+          <div id="side-menu-profile">
+            <div id="profile-picture"><span class="icon-user"></span></div>
+            <div id="menu-profile-data">
+              <div id="your-name">Guest</div>
+              <div id="delivary-address">
+                <p>dileverd to:</p>
+                <p>county, area</p>
+              </div>
+            </div>
+          </div>
+          <div id="side-menu-options">
+            <ul>
+              <li>
+                <a href="">
+                  <span class="icon-user"></span>
+                  <h4>Profile</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-cog"></span>
+                  <h4>Setting</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-heart"></span>
+                  <h4>Your List</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-cart"></span>
+                  <h4>Cart</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-basket"></span>
+                  <h4>Your Orders</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-support-svgrepo-com"></span>
+                  <h4>Help and Support</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-hammer2"></span>
+                  <h4>Terms & Policies</h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="side-menu-signin">
+            <a href="">
+              <span class="icon-enter"></span>
+              <h4>SignIn / LogIn</h4>
+            </a>
           </div>
         </div>
       </div>
@@ -80,20 +124,18 @@
   <section>
     <div>
       <h2>Find Your Perfect Match</h2>
-      <p>Dive into our extensive catalog<br>from minimalist chairs to grand dining sets<br>and finalize your home's design today.</p>
+      <p>Dive into our extensive catalog<br>from minimalist chairs to grand dining sets<br>and finalize your home's
+        design today.</p>
     </div>
     <div class="categorys">
       <div class="categoryImage">
         <img src="assets/images/living-space.jpg" alt="Living" class="0" style="z-index: 2; opacity: 1;">
         <img src="assets/images/lighting-&-decor.jpg" alt="Living" class="1" style="z-index: 1; opacity: 0;">
-        <img src="assets\images\DINING-ESSENTIALS.jpg" alt="Living" class="2"
-          style="z-index: 1; opacity: 0;">
+        <img src="assets\images\DINING-ESSENTIALS.jpg" alt="Living" class="2" style="z-index: 1; opacity: 0;">
         <img src="assets\images\BEDROOM-RETREATS.jpg" alt="Living" class="3" style="z-index: 1; opacity: 0;">
         <img src="assets\images\HOME-OFFICE.jpg" alt="Living" class="4" style="z-index: 1; opacity: 0;">
-        <img src="assets\images\ACCENT-SEATING.jpg" alt="Living" class="5"
-          style="z-index: 1; opacity: 0;">
-        <img src="assets\images\STORAGE-SOLUTIONS.jpg" alt="Living" class="6"
-          style="z-index: 1; opacity: 0;">
+        <img src="assets\images\ACCENT-SEATING.jpg" alt="Living" class="5" style="z-index: 1; opacity: 0;">
+        <img src="assets\images\STORAGE-SOLUTIONS.jpg" alt="Living" class="6" style="z-index: 1; opacity: 0;">
       </div>
       <div class="categoryDescription">
         <div class="s1description">
@@ -102,7 +144,8 @@
               LIVING SPACES
             </h4>
             <p>
-              Design a room where comfort meets class. Explore cozy sofas, statement rugs, and versatile seating that transforms everyday living into effortless relaxation and beautiful memories.
+              Design a room where comfort meets class. Explore cozy sofas, statement rugs, and versatile seating that
+              transforms everyday living into effortless relaxation and beautiful memories.
             </p>
           </div>
           <div class="1" style="z-index: 1;">
@@ -110,7 +153,8 @@
               LIGHTING & DECOR
             </h4>
             <p>
-              Set the mood with brilliance. Explore ambient floor lamps, architectural pendants, and curated decor items that complete your home's narrative and add necessary warmth.
+              Set the mood with brilliance. Explore ambient floor lamps, architectural pendants, and curated decor items
+              that complete your home's narrative and add necessary warmth.
             </p>
           </div>
           <div class="2" style="z-index: 2;">
@@ -118,7 +162,8 @@
               DINING ESSENTIALS
             </h4>
             <p>
-              Gather around tables built for memories. From sleek modern sets to rustic farm tables and bar seating, find durable, beautiful furniture for every meal and celebration.
+              Gather around tables built for memories. From sleek modern sets to rustic farm tables and bar seating,
+              find durable, beautiful furniture for every meal and celebration.
             </p>
           </div>
           <div class="3" style="z-index: 3;">
@@ -126,7 +171,8 @@
               BEDROOM RETREATS
             </h4>
             <p>
-              Craft your perfect sanctuary. Discover handcrafted headboards, luxury bedding, and clever storage solutions designed for tranquil rest and effortless style.
+              Craft your perfect sanctuary. Discover handcrafted headboards, luxury bedding, and clever storage
+              solutions designed for tranquil rest and effortless style.
             </p>
           </div>
           <div class="4" style="z-index: 4;">
@@ -134,7 +180,8 @@
               HOME OFFICE
             </h4>
             <p>
-              Boost productivity without sacrificing style. Browse ergonomic chairs, minimalist desks, and smart storage to create your ideal remote workspace and stay focused.
+              Boost productivity without sacrificing style. Browse ergonomic chairs, minimalist desks, and smart storage
+              to create your ideal remote workspace and stay focused.
             </p>
           </div>
           <div class="5" style="z-index: 5;">
@@ -142,7 +189,8 @@
               ACCENT SEATING
             </h4>
             <p>
-              Elevate any corner with a signature piece. Find armchairs, loveseats, and benches in textures and colors that demand attention and define your unique aesthetic.
+              Elevate any corner with a signature piece. Find armchairs, loveseats, and benches in textures and colors
+              that demand attention and define your unique aesthetic.
             </p>
           </div>
           <div class="6" style="z-index: 6;">
@@ -150,7 +198,8 @@
               STORAGE SOLUTIONS
             </h4>
             <p>
-              Declutter beautifully. Our range of elegant sideboards, shelving units, and multifunctional ottomans proves that organization and clean lines can be effortlessly chic.
+              Declutter beautifully. Our range of elegant sideboards, shelving units, and multifunctional ottomans
+              proves that organization and clean lines can be effortlessly chic.
             </p>
           </div>
         </div>
